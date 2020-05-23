@@ -23,7 +23,7 @@ public class Thanos {
                 new Hero("Iron Man", 48), new Hero("Scarlet Witch", 29), new Hero("Thor", 1500),
                 new Hero("Spider-Man", 18), new Hero("Hulk", 49), new Hero("Doctor Strange", 42));
 
-        // It's Thor birthday, now he's 1501
+
         Hero thor = heroes.stream().filter(hero -> "Thor".equals(hero.getName())).findFirst().get();
         thor.setAge(thor.getAge() + 1);
         System.out.println("Full heroes list before shuffling:");
